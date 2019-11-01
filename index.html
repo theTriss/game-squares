@@ -1,0 +1,23 @@
+<html lang="en">
+  <head>
+    <title> Qualium Systems Javascript test task </title>
+    <style>
+      canvas {
+        background: #000;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <button id='buttonStart' OnClick="controller.start();"> Start </button>
+      <button id='buttonStop' disabled='true' OnClick="controller.stop();"> Stop </button>
+      <span> Score: <span id="score"> 0 </span> </span>
+    </div>
+    <canvas width="640" height="480" id="canvas"></canvas>
+  </body>
+
+  <script type="text/javascript" src="canvas.js"></script>
+  <script type="text/javascript" src="square.js"></script>
+  <script type="text/javascript" src="animation.js"></script>
+  <script type="text/javascript" src="controller.js"></script>
+</html>
